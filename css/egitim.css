@@ -1,0 +1,178 @@
+.container-egitim {
+    max-width: 1200px;
+    margin: 9rem auto;
+    padding: 15px;
+}
+
+.egitim-section-title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Ana Layout */
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media (min-width: 768px) {
+    .page-wrapper {
+        flex-direction: row;
+    }
+}
+
+/* Filtre Bölümü */
+.filter-section {
+    flex: 0 0 280px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.filter-section h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.filter-group {
+    margin-bottom: 25px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #34495e;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.filter-group select:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Eğitim Merkezleri Grid Bölümü */
+.egitim-merkezleri-section {
+    flex: 1;
+}
+
+.egitim-merkezleri-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+}
+
+@media (min-width: 576px) {
+    .egitim-merkezleri-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .egitim-merkezleri-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Eğitim Merkezi Kartları */
+.egitim-merkezi-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.egitim-merkezi-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.egitim-merkezi-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.egitim-merkezi-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.egitim-merkezi-info {
+    padding: 15px;
+}
+
+.egitim-merkezi-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.egitim-merkezi-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+.egitim-merkezi-contact {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.egitim-merkezi-contact i {
+    color: #3498db;
+    width: 15px;
+}
+
+.egitim-merkezi-ilce {
+    display: inline-block;
+    background-color: #e8f4fc;
+    color: #3498db;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+/* Sonuç Bulunamadı Mesajı */
+.no-results {
+    text-align: center;
+    padding: 40px 20px;
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    grid-column: 1 / -1;
+}
+
+/* Responsive Düzenlemeler */
+@media (max-width: 767px) {
+    .filter-section {
+        order: 2;
+    }
+    
+    .egitim-merkezleri-section {
+        order: 1;
+    }
+}

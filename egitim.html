@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İlim Yayma Cemiyeti</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/egitim.css">
+    <!-- Harici CSS ve Fontlar -->
+    <script src="js/head-links.js" defer></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container-header">
+            <div class="header-content">
+                <!-- Logo Section -->
+                <div class="logo-section">
+                    <a href="index.html">
+                        <img src="images/iyc-logo1.png" alt="İlim Yayma Cemiyeti Logo" class="logo-img">
+                    </a>
+                </div>
+
+                <!-- Navigation Menu -->
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">ANA SAYFA</a></li>
+                        <li><a href="kurumsal.html" class="nav-link">KURUMSAL</a></li>
+                        <li><a href="yurtlarimiz.html" class="nav-link">YURTLAR</a></li>
+                        <li><a href="egitim.html" class="nav-link">EĞİTİM</a></li>
+                        <li><a href="tum-haberler.html" class="nav-link">HABERLER</a></li>
+                        <li><a href="#" class="nav-link">GALERİ</a></li>
+                        <li><a href="iletisim.html" class="nav-link">İLETİŞİM</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Right Side Action Links -->
+                <div class="header-actions">
+                    <a href="bagis.html" class="action-link">BAĞIŞ YAP <i class="fas fa-heart"></i></a>
+                    <a href="basvuru.html" class="action-link">BAŞVURU YAP <i class="fas fa-book"></i></a>
+                </div>
+
+                <!-- Hamburger Menu Button (Mobile) -->
+                <button class="hamburger-menu" id="hamburgerBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <img src="images/iyc-logo-2-siyah.png" alt="İlim Yayma Cemiyeti Logo" class="mobile-logo">
+                <button class="close-menu" id="closeMenuBtn" aria-label="Close Menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <nav class="mobile-navigation">
+                <ul class="mobile-nav-list">
+                    <li><a href="index.html" class="mobile-nav-link">ANA SAYFA</a></li>
+                    <li><a href="kurumsal.html" class="mobile-nav-link">KURUMSAL</a></li>
+                    <li><a href="yurtlarimiz.html" class="mobile-nav-link">YURTLAR</a></li>
+                    <li><a href="egitim.html" class="mobile-nav-link">EĞİTİM</a></li>
+                    <li><a href="tum-haberler.html" class="mobile-nav-link">HABERLER</a></li>
+                    <li><a href="#" class="mobile-nav-link">GALERİ</a></li>
+                    <li><a href="iletisim.html" class="mobile-nav-link">İLETİŞİM</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-actions">
+                <a href="#" class="mobile-action-link">
+                    <i class="fas fa-heart"></i>
+                    BAĞIŞ YAP
+                </a>
+                <a href="basvuru.html" class="mobile-action-link">
+                    <i class="fas fa-book"></i>
+                    BAŞVURU YAP
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Eğitim Merkezleri Section -->
+    <div class="container-egitim">
+        <h1 class="egitim-section-title">Eğitim Merkezlerimiz</h1>
+
+        <div class="page-wrapper">
+            <!-- Filtre Bölümü -->
+            <aside class="filter-section">
+                <h2>Filtrele</h2>
+
+                <div class="filter-group">
+                    <label for="ilce-filter">İlçe Seçiniz</label>
+                    <select id="ilce-filter">
+                        <!-- İlçe seçenekleri JavaScript ile dinamik olarak eklenecek -->
+                    </select>
+                </div>
+            </aside>
+
+            <!-- Eğitim Merkezleri Grid Bölümü -->
+            <main class="egitim-merkezleri-section">
+                <div class="egitim-merkezleri-grid" id="egitim-merkezleri-grid">
+                    <!-- Eğitim merkezi kartları JavaScript ile buraya eklenecek -->
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Sol Taraf - Logo ve Açıklama -->
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="images/iyc-beyaz-logo.png" alt="İlim Yayma Cemiyeti Logo" class="footer-logo-img">
+                    </div>
+                    <p class="footer-description text-white">
+                        İlim Yayma Cemiyeti, kurulduğu günden itibaren, hiçbir ayrım yapmaksızın ülke insanımızın
+                        hizmetindedir.
+                    </p>
+                </div>
+
+                <!-- Orta Taraf - Menüler -->
+                <div class="footer-center">
+                    <div class="footer-menu">
+                        <div class="footer-menu-column">
+                            <a href="index.html" class="footer-link">Ana Sayfa</a>
+                            <a href="kurumsal.html#tarihce" class="footer-link">Tarihçe</a>
+                            <a href="kurumsal.html#yonetim-kurulu" class="footer-link">Yönetim Kurulu</a>
+                            <a href="kurumsal.html#baskan-mesaji" class="footer-link">Başkanın Mesajı</a>
+                            <a href="#" class="footer-link">Değerlerimiz</a>
+                        </div>
+                        <div class="footer-menu-column">
+                            <a href="tum-haberler.html" class="footer-link">Haberler</a>
+                            <a href="yurtlarimiz.html" class="footer-link">Yurt Listesi</a>
+                            <a href="egitim.html" class="footer-link">Eğitim Merkezleri</a>
+                            <a href="#" class="footer-link">Gizlilik Sözleşmesi</a>
+                            <a href="iletisim.html" class="footer-link">İletişim</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sağ Taraf - İletişim ve Sosyal Medya -->
+                <div class="footer-right">
+                    <!-- İletişim Bilgileri -->
+                    <div class="footer-contact">
+                        <h4 class="footer-contact-title">İLETİŞİM</h4>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>(0224) 252 45 00</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>iletisim@iycbursa.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sosyal Medya -->
+                    <div class="footer-social">
+                        <h4 class="footer-social-title">BİZİ TAKİP EDİN!</h4>
+                        <div class="footer-social-icons">
+                            <div class="social-icons-si">
+                                <a href="https://www.facebook.com/iycgenelmerkez" class="social-icon-si facebook-si">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com/iycbursa" class="social-icon-si instagram-si">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/company/i̇lim-yayma-cemiyeti/?originalSubdomain=tr"
+                                    class="social-icon-si linkedin-si">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/body-scripts.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/egitim.js"></script>
+
+
+</body>
+
+</html>

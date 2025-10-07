@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İlim Yayma Cemiyeti</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="icon" href="images/iyc-favicon.png">
+    <!-- Harici CSS ve Fontlar -->
+    <script src="js/head-links.js" defer></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container-header">
+            <div class="header-content">
+                <!-- Logo Section -->
+                <div class="logo-section">
+                    
+                    <a href="index.html">
+                        <img src="images/iyc-logo1.png" alt="İlim Yayma Cemiyeti Logo" class="logo-img">
+                    </a>
+                </div>
+
+                <!-- Navigation Menu -->
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">ANA SAYFA</a></li>
+                        <li><a href="kurumsal.html" class="nav-link">KURUMSAL</a></li>
+                        <li><a href="yurtlarimiz.html" class="nav-link">YURTLAR</a></li>
+                        <li><a href="egitim.html" class="nav-link">EĞİTİM</a></li>
+                        <li><a href="tum-haberler.html" class="nav-link">HABERLER</a></li>
+                        <li><a href="#" class="nav-link">GALERİ</a></li>
+                        <li><a href="iletisim.html" class="nav-link">İLETİŞİM</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Right Side Action Links -->
+                <div class="header-actions">
+                    <a href="bagis.html" class="action-link">BAĞIŞ YAP <i class="fas fa-heart"></i></a>
+                    <a href="basvuru.html" class="action-link">BAŞVURU YAP <i class="fas fa-book"></i></a>
+                </div>
+
+                <!-- Hamburger Menu Button (Mobile) -->
+                <button class="hamburger-menu" id="hamburgerBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <img src="images/iyc-logo-last.png" alt="İlim Yayma Cemiyeti Logo" class="mobile-logo">
+                <button class="close-menu" id="closeMenuBtn" aria-label="Close Menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <nav class="mobile-navigation">
+                <ul class="mobile-nav-list">
+                    <li><a href="index.html" class="mobile-nav-link">ANA SAYFA</a></li>
+                    <li><a href="kurumsal.html" class="mobile-nav-link">KURUMSAL</a></li>
+                    <li><a href="yurtlarimiz.html" class="mobile-nav-link">YURTLAR</a></li>
+                    <li><a href="egitim.html" class="mobile-nav-link">EĞİTİM</a></li>
+                    <li><a href="tum-haberler.html" class="mobile-nav-link">HABERLER</a></li>
+                    <li><a href="#" class="mobile-nav-link">GALERİ</a></li>
+                    <li><a href="iletisim.html" class="mobile-nav-link">İLETİŞİM</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-actions">
+                <a href="bagis.html" class="mobile-action-link">
+                    <i class="fas fa-heart"></i>
+                    BAĞIŞ YAP
+                </a>
+                <a href="basvuru.html" class="mobile-action-link">
+                    <i class="fas fa-book"></i>
+                    BAŞVURU YAP
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <!-- Gradient overlay -->
+            <div class="hero-gradient"></div>
+            <!-- Background image -->
+            <div class="hero-image"></div>
+        </div>
+
+        <div class="container" style="margin-top: 26rem; margin-right: 34rem;">
+            <div class="hero-content">
+                <!-- Left side - Text content -->
+                <div class="hero-text">
+                    <h2 class="hero-title">
+                        BİR<br>
+                        YURTTAN<br>
+                        DAHA<br>
+                        FAZLASI!
+                    </h2> <br>
+                    <a href="yurt-basvurusu.html" class="cta-link">BAŞVURU İÇİN TIKLA <i
+                            class="fas fa-arrow-right"></i></a>
+
+                </div>
+
+                <!-- Right side - Image content -->
+                <div class="hero-visual">
+                    <!-- This will be styled with the background image -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <!-- Top Navigation Cards -->
+        <div class="top-nav-cards">
+            <div class="container">
+                <div class="nav-cards-wrapper">
+                    <div class="nav-card" data-aos="fade-right" data-aos-delay="100">
+                        <div class="nav-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 7V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V7" stroke="#DC2626"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3 7H21V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V7Z"
+                                    stroke="#DC2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M8 11H16" stroke="#DC2626" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M8 15H12" stroke="#DC2626" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <a href="yurt-basvurusu.html">
+                            <span class="nav-card-text">YURT BAŞVURUSU</span>
+                        </a>
+                        <div class="nav-card-underline"></div>
+                    </div>
+
+                    <div class="nav-card" data-aos="fade-right" data-aos-delay="200">
+                        <div class="nav-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.84 4.61C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 17.6725 2.99817 16.95 2.99817C16.2275 2.99817 15.5121 3.14052 14.8446 3.41708C14.1772 3.69364 13.5708 4.099 13.06 4.61L12 5.67L10.94 4.61C9.9083 3.5783 8.50903 2.9987 7.05 2.9987C5.59096 2.9987 4.19169 3.5783 3.16 4.61C2.1283 5.6417 1.5487 7.04097 1.5487 8.5C1.5487 9.95903 2.1283 11.3583 3.16 12.39L12 21.23L20.84 12.39C21.351 11.8792 21.7563 11.2728 22.0329 10.6053C22.3095 9.93789 22.4518 9.22248 22.4518 8.5C22.4518 7.77752 22.3095 7.06211 22.0329 6.39467C21.7563 5.72723 21.351 5.1208 20.84 4.61Z"
+                                    stroke="#DC2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <a href="bagis.html">
+                            <span class="nav-card-text">ONLINE BAĞIŞ</span>
+                        </a>
+                        <div class="nav-card-underline"></div>
+                    </div>
+
+                    <div class="nav-card" data-aos="fade-right" data-aos-delay="300">
+                        <div class="nav-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#DC2626" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+                                    stroke="#DC2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M8 6H16" stroke="#DC2626" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M8 10H16" stroke="#DC2626" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M8 14H12" stroke="#DC2626" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <a href="burs-basvurusu.html">
+                            <span class="nav-card-text">BURS BAŞVURUSU</span>
+                        </a>
+                        <div class="nav-card-underline"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <div class="container">
+                <div class="content-wrapper">
+                    <!-- Left side - Illustration -->
+                    <div class="content-visual">
+                        <img src="./images/photo-1.jpg" alt="Öğrenci İllüstrasyonu" class="students-illustration">
+                    </div>
+
+                    <!-- Right side - Text content -->
+                    <div class="content-text">
+                        <p class="content-description">
+                            Yurtlarımız yeni döneme hazır!<br>
+                            Konforlu odalarımız, güvenli ortamımız ve<br>
+                            öğrencilerimize sunduğumuz ayrıcalıklarla<br>
+                            2025 eğitim-öğretim yılına hazırız. Tüm<br>
+                            öğrencilerimize başarı dolu bir dönem dileriz.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics Cards -->
+        <div class="stats-section">
+            <div class="container">
+                <div class="stats-wrapper">
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stat-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="stat-number">156+</div>
+                        <div class="stat-label"> Yurt</div>
+                    </div>
+
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="stat-number">186+</div>
+                        <div class="stat-label">Şube</div>
+                    </div>
+
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="stat-number">36.729+</div>
+                        <div class="stat-label">Yıllık Faaliyet</div>
+                    </div>
+
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="stat-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="stat-number">108+</div>
+                        <div class="stat-label">Eğitim Merkezi</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <div class="container-pg">
+        <h2 class="pg-title">PROJELERİMİZ</h2>
+        <div class="grid-pg">
+            <!-- Projeler JavaScript ile yüklenecek -->
+        </div>
+    </div>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-header">
+                <h2 class="blog-section-title">BLOG & HABERLER</h2>
+                <p class="blog-section-subtitle">
+                    İlim Yayma Cemiyeti'nden güncel haberler, blog yazıları ve önemli duyurular
+                </p>
+            </div>
+
+            <!-- Tab Navigation -->
+            <div class="tab-navigation-wrapper">
+                <div class="tab-navigation">
+                    <button class="tab-btn active" data-tab="blog">
+                        <i class="fas fa-blog"></i>
+                        Blog
+                    </button>
+                    <button class="tab-btn" data-tab="haber">
+                        <i class="fas fa-newspaper"></i>
+                        Haberler
+                    </button>
+                    <button class="tab-btn" data-tab="duyuru">
+                        <i class="fas fa-bullhorn"></i>
+                        Duyurular
+                    </button>
+                </div>
+                <a href="tum-haberler.html" class="all-news-link">
+                    Tüm Haberler
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- Blog Panel -->
+                <div class="tab-panel active" id="blog-panel">
+                    <div class="cards-grid">
+                        <!-- Blog kartları buraya JavaScript ile eklenecek -->
+                    </div>
+                </div>
+
+                <!-- Haberler Panel -->
+                <div class="tab-panel" id="haber-panel">
+                    <div class="cards-grid">
+                        <!-- Haber kartları buraya JavaScript ile eklenecek -->
+                    </div>
+                </div>
+
+                <!-- Duyurular Panel -->
+                <div class="tab-panel" id="duyuru-panel">
+                    <div class="cards-grid">
+                        <!-- Duyuru kartları buraya JavaScript ile eklenecek -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Sol Taraf - Logo ve Açıklama -->
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="images/iyc-beyaz-logo.png" alt="İlim Yayma Cemiyeti Logo" class="footer-logo-img">
+                    </div>
+                    <p class="footer-description text-white">
+                        İlim Yayma Cemiyeti, kurulduğu günden itibaren, hiçbir ayrım yapmaksızın ülke insanımızın
+                        hizmetindedir.
+                    </p>
+                </div>
+
+                <!-- Orta Taraf - Menüler -->
+                <div class="footer-center">
+                    <div class="footer-menu">
+                        <div class="footer-menu-column">
+                            <a href="index.html" class="footer-link">Ana Sayfa</a>
+                            <a href="kurumsal.html#tarihce" class="footer-link">Tarihçe</a>
+                            <a href="kurumsal.html#yonetim-kurulu" class="footer-link">Yönetim Kurulu</a>
+                            <a href="kurumsal.html#baskan-mesaji" class="footer-link">Başkanın Mesajı</a>
+                            <a href="#" class="footer-link">Değerlerimiz</a>
+                        </div>
+                        <div class="footer-menu-column">
+                            <a href="tum-haberler.html" class="footer-link">Haberler</a>
+                            <a href="yurtlarimiz.html" class="footer-link">Yurt Listesi</a>
+                            <a href="egitim.html" class="footer-link">Eğitim Merkezleri</a>
+                            <a href="#" class="footer-link">Gizlilik Sözleşmesi</a>
+                            <a href="iletisim.html" class="footer-link">İletişim</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sağ Taraf - İletişim ve Sosyal Medya -->
+                <div class="footer-right">
+                    <!-- İletişim Bilgileri -->
+                    <div class="footer-contact">
+                        <h4 class="footer-contact-title">İLETİŞİM</h4>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>(0224) 252 45 00</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>iletisim@iycbursa.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sosyal Medya -->
+                    <div class="footer-social">
+                        <h4 class="footer-social-title">BİZİ TAKİP EDİN!</h4>
+                        <div class="footer-social-icons">
+                            <div class="social-icons-si">
+                                <a href="https://www.facebook.com/iycgenelmerkez" class="social-icon-si facebook-si">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com/iycbursa" class="social-icon-si instagram-si">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/company/i̇lim-yayma-cemiyeti/?originalSubdomain=tr"
+                                    class="social-icon-si linkedin-si">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/body-scripts.js"></script>
+    <script src="js/header.js"></script>
+    <!-- Blog JS -->
+    <script src="js/blog.js"></script>
+    <!-- Projeler JS -->
+    <script src="js/projeler.js"></script>
+</body>
+
+</html>

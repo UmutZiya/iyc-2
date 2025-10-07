@@ -1,0 +1,289 @@
+.yurt-detail-container {
+    max-width: 1200px;
+    margin: 9rem auto 2rem;
+    padding: 0 15px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.breadcrumb a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    margin: 0 8px;
+}
+
+/* Yurt Başlığı */
+.yurt-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Yurt Görselleri */
+.yurt-images {
+    margin-bottom: 3rem;
+}
+
+.main-image {
+    margin-bottom: 1rem;
+}
+
+.main-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+}
+
+.thumbnail-images img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid transparent;
+}
+
+.thumbnail-images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.thumbnail-images img.active {
+    border-color: #3498db;
+}
+
+/* Yurt Bilgileri Grid */
+.yurt-info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+    .yurt-info-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Konum Bölümü */
+.yurt-location,
+.yurt-features {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.yurt-location h2,
+.yurt-features h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.yurt-location h2 i,
+.yurt-features h2 i {
+    color: #3498db;
+}
+
+.location-info {
+    margin-bottom: 1.5rem;
+}
+
+.location-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.location-item:last-child {
+    border-bottom: none;
+}
+
+.location-label {
+    font-weight: 600;
+    color: #34495e;
+}
+
+.location-value {
+    color: #7f8c8d;
+}
+
+.map-container {
+    height: 200px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #ddd;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+.map-placeholder {
+    text-align: center;
+    color: #7f8c8d;
+}
+
+.map-placeholder i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* Özellikler Bölümü */
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.feature-item i {
+    color: #3498db;
+    margin-right: 12px;
+    font-size: 1.2rem;
+    width: 20px;
+}
+
+.feature-item span {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+/* Yurt Açıklaması */
+.yurt-description {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 3rem;
+}
+
+.yurt-description h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.yurt-description h2 i {
+    color: #3498db;
+}
+
+.yurt-description p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Geri Dön Butonu */
+.back-button-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.back-button:hover {
+    background: #2980b9;
+    color: white;
+}
+
+/* Responsive Düzenlemeler */
+@media (max-width: 767px) {
+    .yurt-detail-container {
+        margin-top: 7rem;
+        padding: 0 10px;
+    }
+    
+    .yurt-title {
+        font-size: 1.8rem;
+    }
+    
+    .main-image img {
+        height: 250px;
+    }
+    
+    .yurt-location,
+    .yurt-features {
+        padding: 1.5rem;
+    }
+    
+    .thumbnail-images {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+    
+    .thumbnail-images img {
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .location-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .yurt-description {
+        padding: 1.5rem;
+    }
+}

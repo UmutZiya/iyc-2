@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burs Başvurusu - İlim Yayma Cemiyeti</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/burs-basvurusu.css">
+    <!-- Harici CSS ve Fontlar -->
+    <script src="js/head-links.js" defer></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container-header">
+            <div class="header-content">
+                <!-- Logo Section -->
+                <div class="logo-section">
+                    <a href="index.html">
+                        <img src="images/iyc-logo1.png" alt="İlim Yayma Cemiyeti Logo" class="logo-img">
+                    </a>
+                </div>
+
+                <!-- Navigation Menu -->
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">ANA SAYFA</a></li>
+                        <li><a href="kurumsal.html" class="nav-link">KURUMSAL</a></li>
+                        <li><a href="yurtlarimiz.html" class="nav-link">YURTLAR</a></li>
+                        <li><a href="egitim.html" class="nav-link">EĞİTİM</a></li>
+                        <li><a href="tum-haberler.html" class="nav-link">HABERLER</a></li>
+                        <li><a href="#" class="nav-link">GALERİ</a></li>
+                        <li><a href="iletisim.html" class="nav-link">İLETİŞİM</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Right Side Action Links -->
+                <div class="header-actions">
+                    <a href="bagis.html" class="action-link">BAĞIŞ YAP <i class="fas fa-heart"></i></a>
+                    <a href="basvuru.html" class="action-link">BAŞVURU YAP <i class="fas fa-book"></i></a>
+                </div>
+
+                <!-- Hamburger Menu Button (Mobile) -->
+                <button class="hamburger-menu" id="hamburgerBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <img src="images/iyc-logo-2-siyah.png" alt="İlim Yayma Cemiyeti Logo" class="mobile-logo">
+                <button class="close-menu" id="closeMenuBtn" aria-label="Close Menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <nav class="mobile-navigation">
+                <ul class="mobile-nav-list">
+                    <li><a href="index.html" class="mobile-nav-link">ANA SAYFA</a></li>
+                    <li><a href="kurumsal.html" class="mobile-nav-link">KURUMSAL</a></li>
+                    <li><a href="yurtlarimiz.html" class="mobile-nav-link">YURTLAR</a></li>
+                    <li><a href="egitim.html" class="mobile-nav-link">EĞİTİM</a></li>
+                    <li><a href="tum-haberler.html" class="mobile-nav-link">HABERLER</a></li>
+                    <li><a href="#" class="mobile-nav-link">GALERİ</a></li>
+                    <li><a href="iletisim.html" class="mobile-nav-link">İLETİŞİM</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-actions">
+                <a href="#" class="mobile-action-link">
+                    <i class="fas fa-heart"></i>
+                    BAĞIŞ YAP
+                </a>
+                <a href="basvuru.html" class="mobile-action-link">
+                    <i class="fas fa-book"></i>
+                    BAŞVURU YAP
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Burs Başvuru Formu -->
+    <main class="application-form">
+        <div class="container-burs">
+            <!-- Form Başlığı -->
+            <div class="form-header" data-aos="fade-up">
+                <h1 class="form-title">Burs Başvuru Formu</h1>
+                <p class="form-subtitle">Eğitim hayatınızı desteklemek için tüm bilgileri eksiksiz doldurunuz</p>
+            </div>
+
+            <!-- İlerleme Çubuğu -->
+            <div class="progress-container" data-aos="fade-up" data-aos-delay="100">
+                <div class="progress-steps">
+                    <div class="step active" data-step="1">
+                        <div class="step-number">1</div>
+                        <div class="step-label">Kişisel Bilgiler</div>
+                    </div>
+                    <div class="step" data-step="2">
+                        <div class="step-number">2</div>
+                        <div class="step-label">Eğitim Bilgileri</div>
+                    </div>
+                    <div class="step" data-step="3">
+                        <div class="step-number">3</div>
+                        <div class="step-label">Ekonomik Durum</div>
+                    </div>
+                    <div class="step" data-step="4">
+                        <div class="step-number">4</div>
+                        <div class="step-label">Belgeler</div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+
+            <!-- Form Container -->
+            <div class="form-container" data-aos="fade-up" data-aos-delay="200">
+                <form id="bursForm" class="multi-step-form">
+                    
+                    <!-- Adım 1: Kişisel Bilgiler -->
+                    <div class="form-step active" data-step="1">
+                        <div class="step-content">
+                            <h3 class="step-title">Kişisel Bilgiler</h3>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="ad">Ad *</label>
+                                    <input type="text" id="ad" name="ad" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="soyad">Soyad *</label>
+                                    <input type="text" id="soyad" name="soyad" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tcno">T.C. Kimlik No *</label>
+                                    <input type="text" id="tcno" name="tcno" maxlength="11" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="dogumTarihi">Doğum Tarihi *</label>
+                                    <input type="date" id="dogumTarihi" name="dogumTarihi" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cinsiyet">Cinsiyet *</label>
+                                    <select id="cinsiyet" name="cinsiyet" required>
+                                        <option value="">Seçiniz</option>
+                                        <option value="erkek">Erkek</option>
+                                        <option value="kadin">Kadın</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="telefon">Telefon *</label>
+                                    <input type="tel" id="telefon" name="telefon" required>
+                                </div>
+                                <div class="form-group full-width">
+                                    <label for="email">E-posta *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group full-width">
+                                    <label for="adres">Adres *</label>
+                                    <textarea id="adres" name="adres" rows="3" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Adım 2: Eğitim Bilgileri -->
+                    <div class="form-step" data-step="2">
+                        <div class="step-content">
+                            <h3 class="step-title">Eğitim Bilgileri</h3>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="universite">Universite *</label>
+                                    <input type="text" id="universite" name="universite" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="fakulte">Fakülte *</label>
+                                    <input type="text" id="fakulte" name="fakulte" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="bolum">Bölüm *</label>
+                                    <input type="text" id="bolum" name="bolum" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sinif">Sınıf *</label>
+                                    <select id="sinif" name="sinif" required>
+                                        <option value="">Seçiniz</option>
+                                        <option value="1">1. Sınıf</option>
+                                        <option value="2">2. Sınıf</option>
+                                        <option value="3">3. Sınıf</option>
+                                        <option value="4">4. Sınıf</option>
+                                        <option value="5">5. Sınıf</option>
+                                        <option value="6">6. Sınıf</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ogrenciNo">Öğrenci No *</label>
+                                    <input type="text" id="ogrenciNo" name="ogrenciNo" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="gano">GANO *</label>
+                                    <input type="number" id="gano" name="gano" step="0.01" min="0" max="4" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="bursIhtiyaci">Burs İhtiyacı *</label>
+                                    <select id="bursIhtiyaci" name="bursIhtiyaci" required>
+                                        <option value="">Seçiniz</option>
+                                        <option value="tam">Tam Burs</option>
+                                        <option value="yarim">Yarım Burs</option>
+                                        <option value="kismi">Kısmi Burs</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="basariDurumu">Akademik Başarı Durumu</label>
+                                    <select id="basariDurumu" name="basariDurumu">
+                                        <option value="">Seçiniz</option>
+                                        <option value="onur">Onur Öğrencisi</option>
+                                        <option value="yuksek-onur">Yüksek Onur Öğrencisi</option>
+                                        <option value="basarili">Başarılı</option>
+                                        <option value="orta">Orta</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Adım 3: Ekonomik Durum -->
+                    <div class="form-step" data-step="3">
+                        <div class="step-content">
+                            <h3 class="step-title">Ekonomik Durum ve Aile Bilgileri</h3>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="babaAdi">Baba Adı *</label>
+                                    <input type="text" id="babaAdi" name="babaAdi" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="babaMeslegi">Baba Mesleği *</label>
+                                    <input type="text" id="babaMeslegi" name="babaMeslegi" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="babaGeliri">Baba Aylık Geliri (TL)</label>
+                                    <input type="number" id="babaGeliri" name="babaGeliri" min="0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="anneAdi">Anne Adı *</label>
+                                    <input type="text" id="anneAdi" name="anneAdi" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="anneMeslegi">Anne Mesleği</label>
+                                    <input type="text" id="anneMeslegi" name="anneMeslegi">
+                                </div>
+                                <div class="form-group">
+                                    <label for="anneGeliri">Anne Aylık Geliri (TL)</label>
+                                    <input type="number" id="anneGeliri" name="anneGeliri" min="0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="kardesSayisi">Kardeş Sayısı *</label>
+                                    <input type="number" id="kardesSayisi" name="kardesSayisi" min="0" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="okuyanKardes">Öğrenim Gören Kardeş Sayısı</label>
+                                    <input type="number" id="okuyanKardes" name="okuyanKardes" min="0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="evDurumu">Ev Durumu *</label>
+                                    <select id="evDurumu" name="evDurumu" required>
+                                        <option value="">Seçiniz</option>
+                                        <option value="kendi">Kendi Evimiz</option>
+                                        <option value="kira">Kirada Oturuyoruz</option>
+                                        <option value="akraba">Akraba Yanında</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sosyalYardim">Sosyal Yardım Alıyor musunuz?</label>
+                                    <select id="sosyalYardim" name="sosyalYardim">
+                                        <option value="">Seçiniz</option>
+                                        <option value="evet">Evet</option>
+                                        <option value="hayir">Hayır</option>
+                                    </select>
+                                </div>
+                                <div class="form-group full-width">
+                                    <label for="bursGerekce">Burs Gerekçeniz *</label>
+                                    <textarea id="bursGerekce" name="bursGerekce" rows="4" placeholder="Neden burs ihtiyacınız olduğunu detaylı bir şekilde açıklayınız" required></textarea>
+                                </div>
+                                <div class="form-group full-width">
+                                    <label for="gelecekPlan">Gelecek Planlarınız</label>
+                                    <textarea id="gelecekPlan" name="gelecekPlan" rows="3" placeholder="Mezuniyet sonrası planlarınızı kısaca belirtiniz"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Adım 4: Belgeler -->
+                    <div class="form-step" data-step="4">
+                        <div class="step-content">
+                            <h3 class="step-title">Belgeler</h3>
+                            <div class="upload-section">
+                                <div class="upload-item">
+                                    <label for="kimlikBelgesi">Kimlik Belgesi *</label>
+                                    <div class="file-upload">
+                                        <input type="file" id="kimlikBelgesi" name="kimlikBelgesi" accept=".pdf,.jpg,.jpeg,.png" required>
+                                        <div class="upload-placeholder">
+                                            <i class="fas fa-cloud-upload-alt"></i>
+                                            <span>Dosya seçin veya sürükleyin</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="upload-item">
+                                    <label for="ogrenciBelgesi">Öğrenci Belgesi *</label>
+                                    <div class="file-upload">
+                                        <input type="file" id="ogrenciBelgesi" name="ogrenciBelgesi" accept=".pdf,.jpg,.jpeg,.png" required>
+                                        <div class="upload-placeholder">
+                                            <i class="fas fa-cloud-upload-alt"></i>
+                                            <span>Dosya seçin veya sürükleyin</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="upload-item">
+                                    <label for="transkript">Transkript *</label>
+                                    <div class="file-upload">
+                                        <input type="file" id="transkript" name="transkript" accept=".pdf,.jpg,.jpeg,.png" required>
+                                        <div class="upload-placeholder">
+                                            <i class="fas fa-cloud-upload-alt"></i>
+                                            <span>Dosya seçin veya sürükleyin</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="upload-item">
+                                    <label for="gelirBelgesi">Aile Gelir Belgesi *</label>
+                                    <div class="file-upload">
+                                        <input type="file" id="gelirBelgesi" name="gelirBelgesi" accept=".pdf,.jpg,.jpeg,.png" required>
+                                        <div class="upload-placeholder">
+                                            <i class="fas fa-cloud-upload-alt"></i>
+                                            <span>Dosya seçin veya sürükleyin</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="upload-item">
+                                    <label for="vesikalikFoto">Vesikalık Fotoğraf *</label>
+                                    <div class="file-upload">
+                                        <input type="file" id="vesikalikFoto" name="vesikalikFoto" accept=".jpg,.jpeg,.png" required>
+                                        <div class="upload-placeholder">
+                                            <i class="fas fa-cloud-upload-alt"></i>
+                                            <span>Dosya seçin veya sürükleyin</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="upload-item">
+                                    <label for="referansMektubu">Referans Mektubu</label>
+                                    <div class="file-upload">
+                                        <input type="file" id="referansMektubu" name="referansMektubu" accept=".pdf,.jpg,.jpeg,.png">
+                                        <div class="upload-placeholder">
+                                            <i class="fas fa-cloud-upload-alt"></i>
+                                            <span>Dosya seçin veya sürükleyin</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="terms-section">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="sozlesme" name="sozlesme" required>
+                                    <span class="checkmark"></span>
+                                    <span class="checkbox-text">
+                                        <a href="#" target="_blank">Burs Sözleşmesi</a>'ni okudum ve kabul ediyorum *
+                                    </span>
+                                </label>
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="kvkk" name="kvkk" required>
+                                    <span class="checkmark"></span>
+                                    <span class="checkbox-text">
+                                        <a href="#" target="_blank">KVKK Aydınlatma Metni</a>'ni okudum ve onayımı veriyorum *
+                                    </span>
+                                </label>
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="bilgiDogrulugu" name="bilgiDogrulugu" required>
+                                    <span class="checkmark"></span>
+                                    <span class="checkbox-text">
+                                        Verdiğim bilgilerin doğru olduğunu beyan ederim *
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Butonları -->
+                    <div class="form-navigation">
+                        <button type="button" class="btn-prev" id="prevBtn" style="display: none;">
+                            <i class="fas fa-arrow-left"></i>
+                            Geri
+                        </button>
+                        <button type="button" class="btn-next" id="nextBtn">
+                            İleri
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button type="submit" class="btn-submit" id="submitBtn" style="display: none;">
+                            <i class="fas fa-paper-plane"></i>
+                            Başvuruyu Gönder
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Sol Taraf - Logo ve Açıklama -->
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="images/iyc-beyaz-logo.png" alt="İlim Yayma Cemiyeti Logo" class="footer-logo-img">
+                    </div>
+                    <p class="footer-description text-white">
+                        İlim Yayma Cemiyeti, kurulduğu günden itibaren, hiçbir ayrım yapmaksızın ülke insanımızın
+                        hizmetindedir.
+                    </p>
+                </div>
+
+                <!-- Orta Taraf - Menüler -->
+                <div class="footer-center">
+                    <div class="footer-menu">
+                        <div class="footer-menu-column">
+                            <a href="index.html" class="footer-link">Ana Sayfa</a>
+                            <a href="kurumsal.html#tarihce" class="footer-link">Tarihçe</a>
+                            <a href="kurumsal.html#yonetim-kurulu" class="footer-link">Yönetim Kurulu</a>
+                            <a href="kurumsal.html#baskan-mesaji" class="footer-link">Başkanın Mesajı</a>
+                            <a href="#" class="footer-link">Değerlerimiz</a>
+                        </div>
+                        <div class="footer-menu-column">
+                            <a href="tum-haberler.html" class="footer-link">Haberler</a>
+                            <a href="yurtlarimiz.html" class="footer-link">Yurt Listesi</a>
+                            <a href="egitim.html" class="footer-link">Eğitim Merkezleri</a>
+                            <a href="#" class="footer-link">Gizlilik Sözleşmesi</a>
+                            <a href="iletisim.html" class="footer-link">İletişim</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sağ Taraf - İletişim ve Sosyal Medya -->
+                <div class="footer-right">
+                    <!-- İletişim Bilgileri -->
+                    <div class="footer-contact">
+                        <h4 class="footer-contact-title">İLETİŞİM</h4>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>(0224) 252 45 00</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>iletisim@iycbursa.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sosyal Medya -->
+                    <div class="footer-social">
+                        <h4 class="footer-social-title">BİZİ TAKİP EDİN!</h4>
+                        <div class="footer-social-icons">
+                            <div class="social-icons-si">
+                                <a href="https://www.facebook.com/iycgenelmerkez" class="social-icon-si facebook-si">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com/iycbursa" class="social-icon-si instagram-si">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/company/i̇lim-yayma-cemiyeti/?originalSubdomain=tr"
+                                    class="social-icon-si linkedin-si">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Harici ve Yerel Script Dosyaları -->
+    <script src="js/body-scripts.js"></script>
+    <!-- Custom Header JS -->
+    <script src="js/header.js"></script>
+    <script src="js/burs-basvurusu.js"></script>
+
+</body>
+
+</html>

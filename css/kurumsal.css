@@ -1,0 +1,415 @@
+/* Kurumsal Sayfa Stilleri */
+.kurumsal-main {
+    min-height: calc(100vh - 200px);
+    padding: 80px 0 40px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+/* Sidebar Stilleri */
+.kurumsal-sidebar {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: sticky;
+    top: 160px;
+    margin-bottom: 30px;
+}
+
+.sidebar-header {
+    background: #13a89e;
+    color: white;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.sidebar-header h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.sidebar-nav {
+    padding: 0;
+}
+
+.sidebar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-item {
+    border-bottom: 1px solid #f1f3f4;
+}
+
+.sidebar-item:last-child {
+    border-bottom: none;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    padding: 18px 20px;
+    color: #495057;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.sidebar-link:hover {
+    background: #f8f9fa;
+    color: #13a89e;
+    text-decoration: none;
+    transform: translateX(5px);
+}
+
+.sidebar-item.active .sidebar-link {
+    background: #13a89e;
+    color: white;
+    border-left: 4px solid #0f8a82;
+}
+
+.sidebar-link i {
+    margin-right: 12px;
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+}
+
+.container-fluid{
+    margin-top: 7rem;
+}
+
+/* Ana İçerik Stilleri */
+.kurumsal-content {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.content-section {
+    display: none;
+    padding: 40px;
+    min-height: 600px;
+}
+
+.content-section.active {
+    display: block;
+}
+
+.section-header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.section-header h1 {
+    color: #000000;
+    font-size: 2.7rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.section-divider {
+    width: 80px;
+    height: 4px;
+    background: #13a89e;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.section-content {
+    line-height: 1.8;
+    color: #495057;
+}
+
+.section-content .lead {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #3b3a3a;
+    margin-bottom: 25px;
+}
+
+.section-content p {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+/* Hakkımızda Bölümü */
+.about-image {
+    text-align: center;
+    padding: 20px;
+}
+
+.about-image img {
+    max-width: 200px;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+}
+
+/* Başkan Mesajı Stilleri */
+.president-message {
+    background: rgba(19, 168, 158, 0.05);
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.president-photo img {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.president-quote {
+    background: white;
+    border-left: 5px solid #13a89e;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.president-quote p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.president-quote footer {
+    text-align: right;
+    color: #6c757d;
+}
+
+/* Yönetim Kurulu Stilleri */
+.management-grid {
+    margin-top: 20px;
+}
+
+.management-card {
+    background: white;
+    border: 1px solid rgba(19, 168, 158, 0.2);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.management-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(19, 168, 158, 0.15);
+    border-color: #13a89e;
+}
+
+.management-card .card-body {
+    padding: 30px 25px;
+    text-align: center;
+}
+
+.management-card h5 {
+    color: #13a89e;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Tarihçe Stilleri */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #13a89e;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 120px;
+}
+
+.timeline-year {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    background: #13a89e;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: 0 5px 15px rgba(19, 168, 158, 0.3);
+}
+
+.timeline-content {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #13a89e;
+}
+
+.timeline-content h4 {
+    color: #13a89e;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Dernek Tüzüğü Stilleri */
+.statute-content {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.statute-download {
+    margin-top: 40px;
+}
+
+.btn-primary {
+    background: #13a89e;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(19, 168, 158, 0.3);
+}
+
+.btn-primary:hover {
+    background: #0f8a82;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(19, 168, 158, 0.4);
+}
+
+/* Responsive Tasarım */
+@media (max-width: 991.98px) {
+    .kurumsal-main {
+        padding: 40px 0;
+    }
+    
+    .kurumsal-sidebar {
+        position: static;
+        margin-bottom: 30px;
+    }
+    
+    .sidebar-nav {
+        display: none;
+    }
+    
+    .sidebar-header {
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .sidebar-header::after {
+        content: '\f107';
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: transform 0.3s ease;
+    }
+    
+    .sidebar-nav.show {
+        display: block;
+    }
+    
+    .sidebar-nav.show ~ .sidebar-header::after {
+        transform: translateY(-50%) rotate(180deg);
+    }
+    
+    .content-section {
+        padding: 30px 20px;
+    }
+    
+    .section-header h1 {
+        font-size: 2rem;
+    }
+    
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-item {
+        padding-left: 80px;
+    }
+    
+    .timeline-year {
+        width: 60px;
+        height: 60px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .kurumsal-main {
+        padding: 40px 0 20px 0;
+    }
+    
+    .content-section {
+        padding: 20px 15px;
+    }
+    
+    .section-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .president-message {
+        padding: 20px;
+    }
+    
+    .president-quote {
+        padding: 20px;
+    }
+    
+    .president-quote p {
+        font-size: 1.1rem;
+    }
+    
+    .timeline-item {
+        padding-left: 70px;
+    }
+    
+    .timeline-year {
+        width: 50px;
+        height: 50px;
+        font-size: 0.8rem;
+    }
+    
+    .timeline-content {
+        padding: 20px;
+    }
+}
+
+/* Animasyonlar */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content-section.active {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+}

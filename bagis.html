@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İlim Yayma Cemiyeti</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/bagis.css">
+    <!-- Harici CSS ve Fontlar -->
+    <script src="js/head-links.js" defer></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container-header">
+            <div class="header-content">
+                <!-- Logo Section -->
+                <div class="logo-section">
+                    <a href="index.html">
+                        <img src="images/iyc-logo1.png" alt="İlim Yayma Cemiyeti Logo" class="logo-img">
+                    </a>
+                </div>
+
+                <!-- Navigation Menu -->
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">ANA SAYFA</a></li>
+                        <li><a href="kurumsal.html" class="nav-link">KURUMSAL</a></li>
+                        <li><a href="yurtlarimiz.html" class="nav-link">YURTLAR</a></li>
+                        <li><a href="egitim.html" class="nav-link">EĞİTİM</a></li>
+                        <li><a href="tum-haberler.html" class="nav-link">HABERLER</a></li>
+                        <li><a href="#" class="nav-link">GALERİ</a></li>
+                        <li><a href="iletisim.html" class="nav-link">İLETİŞİM</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Right Side Action Links -->
+                <div class="header-actions">
+                    <a href="bagis.html" class="action-link">BAĞIŞ YAP <i class="fas fa-heart"></i></a>
+                    <a href="basvuru.html" class="action-link">BAŞVURU YAP <i class="fas fa-book"></i></a>
+                </div>
+
+                <!-- Hamburger Menu Button (Mobile) -->
+                <button class="hamburger-menu" id="hamburgerBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <img src="images/iyc-logo-2-siyah.png" alt="İlim Yayma Cemiyeti Logo" class="mobile-logo">
+                <button class="close-menu" id="closeMenuBtn" aria-label="Close Menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <nav class="mobile-navigation">
+                <ul class="mobile-nav-list">
+                    <li><a href="index.html" class="mobile-nav-link">ANA SAYFA</a></li>
+                    <li><a href="kurumsal.html" class="mobile-nav-link">KURUMSAL</a></li>
+                    <li><a href="yurtlarimiz.html" class="mobile-nav-link">YURTLAR</a></li>
+                    <li><a href="egitim.html" class="mobile-nav-link">EĞİTİM</a></li>
+                    <li><a href="tum-haberler.html" class="mobile-nav-link">HABERLER</a></li>
+                    <li><a href="#" class="mobile-nav-link">GALERİ</a></li>
+                    <li><a href="iletisim.html" class="mobile-nav-link">İLETİŞİM</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-actions">
+                <a href="#" class="mobile-action-link">
+                    <i class="fas fa-heart"></i>
+                    BAĞIŞ YAP
+                </a>
+                <a href="basvuru.html" class="mobile-action-link">
+                    <i class="fas fa-book"></i>
+                    BAŞVURU YAP
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Bağış Formu Start -->
+    <div class="container-b">
+        <header class="header-b">
+            <h1>Hayır Elini Uzat</h1>
+            <p>İhtiyaç sahiplerine ulaşan her bağış, bir umut ışığı yakar</p>
+        </header>
+
+        <div class="donation-card">
+            <div class="step-indicator">
+                <div class="step-indicator-progress" id="stepProgress"></div>
+                <div class="step" data-step="0">
+                    <div class="step-circle">1</div>
+                    <div class="step-label">Bağış Türü</div>
+                </div>
+                <div class="step" data-step="1">
+                    <div class="step-circle">2</div>
+                    <div class="step-label">Bilgileriniz</div>
+                </div>
+                <div class="step" data-step="2">
+                    <div class="step-circle">3</div>
+                    <div class="step-label">Ödeme</div>
+                </div>
+            </div>
+
+            <form id="donationForm">
+                <!-- Step 0: Bağış Türü Seçimi -->
+                <div class="form-step active" data-step="0">
+                    <div class="form-section">
+                        <div class="section-title">Bağış Türünü Seçin</div>
+                        <div class="donation-types">
+                            <label class="donation-type">
+                                <input type="radio" name="donationType" value="ogrenci" required>
+                                <div class="donation-type-label">
+                                    <div class="donation-type-icon">📚</div>
+                                    <div class="donation-type-name">Öğrenci Yardımı</div>
+                                </div>
+                            </label>
+                            <label class="donation-type">
+                                <input type="radio" name="donationType" value="kurban" required>
+                                <div class="donation-type-label">
+                                    <div class="donation-type-icon">🐑</div>
+                                    <div class="donation-type-name">Kurban Bağışı</div>
+                                </div>
+                            </label>
+                            <label class="donation-type">
+                                <input type="radio" name="donationType" value="zekat" required>
+                                <div class="donation-type-label">
+                                    <div class="donation-type-icon">🤲</div>
+                                    <div class="donation-type-name">Zekat Bağışı</div>
+                                </div>
+                            </label>
+                            <label class="donation-type">
+                                <input type="radio" name="donationType" value="fidan" required>
+                                <div class="donation-type-label">
+                                    <div class="donation-type-icon">🌱</div>
+                                    <div class="donation-type-name">Fidan Bağışı</div>
+                                </div>
+                            </label>
+                            <label class="donation-type">
+                                <input type="radio" name="donationType" value="sadaka" required>
+                                <div class="donation-type-label">
+                                    <div class="donation-type-icon">💝</div>
+                                    <div class="donation-type-name">Sadaka Bağışı</div>
+                                </div>
+                            </label>
+                            <!-- Added new donation type: Kütüphane Bağışı -->
+                            <label class="donation-type">
+                                <input type="radio" name="donationType" value="kutuphane" required>
+                                <div class="donation-type-label">
+                                    <div class="donation-type-icon">📖</div>
+                                    <div class="donation-type-name">Kütüphane Bağışı</div>
+                                </div>
+                            </label>
+                            <!-- Added new donation type: Hafızlık Burs Bağışı -->
+                            <label class="donation-type">
+                                <input type="radio" name="donationType" value="hafizlik" required>
+                                <div class="donation-type-label">
+                                    <div class="donation-type-icon">📿</div>
+                                    <div class="donation-type-name">Hafızlık Burs Bağışı</div>
+                                </div>
+                            </label>
+                            <label class="donation-type">
+                                <input type="radio" name="donationType" value="genel" required>
+                                <div class="donation-type-label">
+                                    <div class="donation-type-icon">❤️</div>
+                                    <div class="donation-type-name">Genel Bağış</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="button" class="button button-primary" id="step0Next" disabled>
+                            İleri
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 1: Bağışçı Bilgileri -->
+                <div class="form-step" data-step="1">
+                    <div class="form-section">
+                        <div class="section-title">Bağışçı Bilgileri</div>
+
+                        <div class="form-group" style="margin-bottom: 1.25rem;">
+                            <label class="form-label">Bağışçı Türü</label>
+                            <div class="donor-type-options">
+                                <label class="donor-type-option">
+                                    <input type="radio" name="donorType" value="bireysel" required>
+                                    <div class="donor-type-label">Bireysel</div>
+                                </label>
+                                <label class="donor-type-option">
+                                    <input type="radio" name="donorType" value="kurumsal" required>
+                                    <div class="donor-type-label">Kurumsal</div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-grid two-col">
+                            <div class="form-group">
+                                <label class="form-label" for="firstName">Ad</label>
+                                <input type="text" id="firstName" class="form-input" placeholder="Adınız" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="lastName">Soyad</label>
+                                <input type="text" id="lastName" class="form-input" placeholder="Soyadınız" required>
+                            </div>
+                        </div>
+
+                        <div class="form-grid" style="margin-top: 1.25rem;">
+                            <div class="form-group">
+                                <label class="form-label" for="phone">GSM Numarası</label>
+                                <input type="tel" id="phone" class="form-input" placeholder="0555 555 55 55" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="email">E-posta</label>
+                                <input type="email" id="email" class="form-input" placeholder="ornek@email.com"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="form-group" style="margin-top: 1.25rem;">
+                            <label class="form-label">Cinsiyet</label>
+                            <div class="gender-options">
+                                <label class="gender-option">
+                                    <input type="radio" name="gender" value="erkek" required>
+                                    <div class="gender-label">Erkek</div>
+                                </label>
+                                <label class="gender-option">
+                                    <input type="radio" name="gender" value="kadin" required>
+                                    <div class="gender-label">Kadın</div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group" style="margin-top: 1.25rem;">
+                            <label class="form-label optional" for="note">Not</label>
+                            <textarea id="note" class="form-textarea"
+                                placeholder="Bağışınız hakkında not ekleyebilirsiniz..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="button" class="button button-secondary" id="step1Back">
+                            Geri
+                        </button>
+                        <button type="button" class="button button-primary" id="step1Next" disabled>
+                            İleri
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Ödeme Bilgileri -->
+                <div class="form-step" data-step="2">
+                    <div class="form-section">
+                        <div class="section-title">Ödeme Bilgileri</div>
+
+                        <!-- Payment Method Tabs -->
+                        <div class="payment-tabs">
+                            <button type="button" class="payment-tab active" data-tab="card">
+                                <i class="fas fa-credit-card"></i>
+                                Kredi Kartı ile Ödeme
+                            </button>
+                            <button type="button" class="payment-tab" data-tab="iban">
+                                <i class="fas fa-university"></i>
+                                IBAN ile Ödeme
+                            </button>
+                        </div>
+
+                        <!-- Card Payment Content -->
+                        <div class="payment-content active" id="cardPayment">
+                            <div class="card-preview">
+                                <div class="card-number-display" id="cardNumberDisplay">
+                                    •••• •••• •••• ••••
+                                </div>
+                                <div class="card-details-display">
+                                    <div>
+                                        <div class="card-holder-display">Kart Sahibi</div>
+                                        <div class="card-holder-name" id="cardHolderDisplay">AD SOYAD</div>
+                                    </div>
+                                    <div class="card-expiry-display">
+                                        <div class="card-expiry-label">Son Kullanma</div>
+                                        <div class="card-expiry-value" id="cardExpiryDisplay">AA/YY</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="cardHolder">Kart Üzerindeki Ad Soyad</label>
+                                <input type="text" id="cardHolder" class="form-input" placeholder="AD SOYAD">
+                            </div>
+
+                            <div class="form-group" style="margin-top: 1.25rem;">
+                                <label class="form-label" for="cardNumber">Kart Numarası</label>
+                                <input type="text" id="cardNumber" class="form-input" placeholder="1234 5678 9012 3456"
+                                    maxlength="19">
+                            </div>
+
+                            <div class="form-grid" style="margin-top: 1.25rem;">
+                                <div class="card-inputs-grid">
+                                    <div class="form-group">
+                                        <label class="form-label" for="amount">Bağış Tutarı (₺)</label>
+                                        <input type="number" id="amount" class="form-input" placeholder="100" min="10"
+                                            step="10" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="expiryMonth">Ay</label>
+                                        <select id="expiryMonth" class="form-select">
+                                            <option value="">Ay</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="expiryYear">Yıl</label>
+                                        <select id="expiryYear" class="form-select">
+                                            <option value="">Yıl</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="cvv">CVC</label>
+                                        <input type="text" id="cvv" class="form-input" placeholder="123" maxlength="3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- IBAN Payment Content -->
+                        <div class="payment-content" id="ibanPayment">
+                            <div class="form-group">
+                                <label class="form-label">Hesap Seçiniz</label>
+                                <div class="custom-select" id="customSelect">
+                                    <div class="select-trigger">
+                                        <span class="select-text">Hesap seçiniz...</span>
+                                        <i class="fas fa-chevron-down select-arrow"></i>
+                                    </div>
+                                    <div class="select-options">
+                                        <div class="option-group">
+                                            <div class="group-label">Bursa Şubesi</div>
+                                            <div class="option" data-value="bursa_sube_albaraka">
+                                                <i class="fas fa-university"></i>
+                                                <span>AlbarakaTürk</span>
+                                            </div>
+                                            <div class="option" data-value="bursa_sube_kuveyt">
+                                                <i class="fas fa-university"></i>
+                                                <span>Kuveyt Türk</span>
+                                            </div>
+                                            <div class="option" data-value="bursa_sube_vakif">
+                                                <i class="fas fa-university"></i>
+                                                <span>Vakıfbank</span>
+                                            </div>
+                                        </div>
+                                        <div class="option-group">
+                                            <div class="group-label">İktisadi İşletme</div>
+                                            <div class="option" data-value="bursa_iktisadi">
+                                                <i class="fas fa-building"></i>
+                                                <span>Bursa İktisadi İşletmesi</span>
+                                            </div>
+                                        </div>
+                                        <div class="option-group">
+                                            <div class="group-label">Yükseköğretim Yurtları</div>
+                                            <div class="option" data-value="abdurrahman_tutan">
+                                                <i class="fas fa-home"></i>
+                                                <span>Abdurrahman Tutan Erkek Yurdu</span>
+                                            </div>
+                                            <div class="option" data-value="gevher_sonmez">
+                                                <i class="fas fa-home"></i>
+                                                <span>Gevher Sönmez Erkek Yurdu</span>
+                                            </div>
+                                            <div class="option" data-value="mehmet_akif">
+                                                <i class="fas fa-home"></i>
+                                                <span>Mehmet Akif Buharalı Kız Yurdu</span>
+                                            </div>
+                                            <div class="option" data-value="keles_yurt">
+                                                <i class="fas fa-home"></i>
+                                                <span>Keles Kız Yurdu</span>
+                                            </div>
+                                        </div>
+                                        <div class="option-group">
+                                            <div class="group-label">Yükseköğretim Konukevleri</div>
+                                            <div class="option" data-value="mustafa_dortcelik">
+                                                <i class="fas fa-bed"></i>
+                                                <span>Mustafa Dörtçelik Kız Konukevi</span>
+                                            </div>
+                                            <div class="option" data-value="fethiye_konukevi">
+                                                <i class="fas fa-bed"></i>
+                                                <span>Fethiye Kız Konukevi</span>
+                                            </div>
+                                            <div class="option" data-value="unsal_konukevi">
+                                                <i class="fas fa-bed"></i>
+                                                <span>Ünsal Kız Konukevi</span>
+                                            </div>
+                                        </div>
+                                        <div class="option-group">
+                                            <div class="group-label">Ortaöğretim</div>
+                                            <div class="option" data-value="saban_guzeler">
+                                                <i class="fas fa-school"></i>
+                                                <span>Şaban Güzeler Erkek Yurdu</span>
+                                            </div>
+                                            <div class="option" data-value="akman_konukevi">
+                                                <i class="fas fa-school"></i>
+                                                <span>Akman Kız Konukevi</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" id="bankSelect" required>
+                            </div>
+
+                            <div class="iban-card" id="selectedBankInfo" style="display: none;">
+                                <h4>Seçilen Hesap Bilgileri</h4>
+                                <div class="bank-info">
+                                    <div class="bank-detail">
+                                        <span class="label">Hesap Sahibi:</span>
+                                        <span class="value" id="bankName"></span>
+                                    </div>
+                                    <div class="bank-detail">
+                                        <span class="label">IBAN:</span>
+                                        <span class="value iban-number" id="selectedIban"></span>
+                                        <button type="button" class="copy-btn" onclick="copySelectedIban()">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
+                                    <div class="bank-detail">
+                                        <span class="label">Banka:</span>
+                                        <span class="value" id="branchCode"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group" style="margin-top: 1.5rem;">
+                                <label class="form-label" for="ibanAmount">Bağış Tutarı (₺)</label>
+                                <input type="number" id="ibanAmount" class="form-input" placeholder="100" min="10"
+                                    step="10" required>
+                            </div>
+
+                            <div class="iban-instructions">
+                                <h5>Bağış Talimatları:</h5>
+                                <ul>
+                                    <li>Yukarıdan bağış yapmak istediğiniz hesabı seçin</li>
+                                    <li>Seçilen IBAN numarasına bağış tutarınızı gönderin</li>
+                                    <li>Havale açıklama kısmına adınızı ve bağış türünü yazın</li>
+                                    <li>Dekont fotoğrafını WhatsApp ile gönderin: +90 555 123 45 67</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-badge">
+                        <span class="info-icon">🔒</span>
+                        <span>Tüm ödeme bilgileriniz güvenli bir şekilde şifrelenir</span>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="button" class="button button-secondary" id="step2Back">
+                            Geri
+                        </button>
+                        <button type="submit" class="button button-primary" id="submitButton" disabled>
+                            Bağış Yap
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="success-message" id="successMessage">
+                <div class="success-icon">✓</div>
+                <h2>Bağışınız Alındı!</h2>
+                <p>Hayırseverliğiniz için teşekkür ederiz. Bağışınız en kısa sürede ihtiyaç sahiplerine
+                    ulaştırılacaktır.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Sol Taraf - Logo ve Açıklama -->
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="images/iyc-beyaz-logo.png" alt="İlim Yayma Cemiyeti Logo" class="footer-logo-img">
+                    </div>
+                    <p class="footer-description text-white">
+                        İlim Yayma Cemiyeti, kurulduğu günden itibaren, hiçbir ayrım yapmaksızın ülke insanımızın
+                        hizmetindedir.
+                    </p>
+                </div>
+
+                <!-- Orta Taraf - Menüler -->
+                <div class="footer-center">
+                    <div class="footer-menu">
+                        <div class="footer-menu-column">
+                            <a href="index.html" class="footer-link">Ana Sayfa</a>
+                            <a href="kurumsal.html#tarihce" class="footer-link">Tarihçe</a>
+                            <a href="kurumsal.html#yonetim-kurulu" class="footer-link">Yönetim Kurulu</a>
+                            <a href="kurumsal.html#baskan-mesaji" class="footer-link">Başkanın Mesajı</a>
+                            <a href="#" class="footer-link">Değerlerimiz</a>
+                        </div>
+                        <div class="footer-menu-column">
+                            <a href="tum-haberler.html" class="footer-link">Haberler</a>
+                            <a href="yurtlarimiz.html" class="footer-link">Yurt Listesi</a>
+                            <a href="egitim.html" class="footer-link">Eğitim Merkezleri</a>
+                            <a href="#" class="footer-link">Gizlilik Sözleşmesi</a>
+                            <a href="iletisim.html" class="footer-link">İletişim</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sağ Taraf - İletişim ve Sosyal Medya -->
+                <div class="footer-right">
+                    <!-- İletişim Bilgileri -->
+                    <div class="footer-contact">
+                        <h4 class="footer-contact-title">İLETİŞİM</h4>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>(0224) 252 45 00</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>iletisim@iycbursa.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sosyal Medya -->
+                    <div class="footer-social">
+                        <h4 class="footer-social-title">BİZİ TAKİP EDİN!</h4>
+                        <div class="footer-social-icons">
+                            <div class="social-icons-si">
+                                <a href="https://www.facebook.com/iycgenelmerkez" class="social-icon-si facebook-si">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com/iycbursa" class="social-icon-si instagram-si">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/company/i̇lim-yayma-cemiyeti/?originalSubdomain=tr"
+                                    class="social-icon-si linkedin-si">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/body-scripts.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/bagis.js"></script>
+
+    
+</body>
+
+</html>
