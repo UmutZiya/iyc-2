@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero-slider.css">
+    <link rel="stylesheet" href="css/main-content-logo.css">
     <link rel="icon" href="images/iyc-favicon.png">
     <!-- Harici CSS ve Fontlar -->
     <script src="js/head-links.js" defer></script>
@@ -93,33 +95,33 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-background">
-            <!-- Gradient overlay -->
-            <div class="hero-gradient"></div>
-            <!-- Background image -->
-            <div class="hero-image"></div>
-        </div>
-
-        <div class="container" style="margin-top: 26rem; margin-right: 34rem;">
-            <div class="hero-content">
-                <!-- Left side - Text content -->
-                <div class="hero-text">
-                    <h2 class="hero-title">
-                        BİR<br>
-                        YURTTAN<br>
-                        DAHA<br>
-                        FAZLASI!
-                    </h2> <br>
-                    <a href="yurt-basvurusu.html" class="cta-link">BAŞVURU İÇİN TIKLA <i
-                            class="fas fa-arrow-right"></i></a>
-
+        <div class="hero-slider">
+            <div class="slider-container">
+                <div class="slide active">
+                    <img src="images/slider2.jpg" alt="Hero Slide 1" class="slide-image desktop-image">
+                    <img src="images/mobil2.jpg" alt="Hero Slide 1 Mobile" class="slide-image mobile-image">
+                    <div class="slide-overlay"></div>
                 </div>
-
-                <!-- Right side - Image content -->
-                <div class="hero-visual">
-                    <!-- This will be styled with the background image -->
+                <div class="slide">
+                    <img src="images/SLİDER1.jpg" alt="Hero Slide 2" class="slide-image desktop-image">
+                    <img src="images/mobil1.jpg" alt="Hero Slide 2 Mobile" class="slide-image mobile-image">
+                    <div class="slide-overlay"></div>
                 </div>
             </div>
+            
+            <!-- Navigation Dots -->
+            <div class="slider-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+            </div>
+            
+            <!-- Navigation Arrows -->
+            <button class="slider-arrow prev" aria-label="Previous slide">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-arrow next" aria-label="Next slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
         </div>
     </section>
 
@@ -193,9 +195,11 @@
         <div class="main-content">
             <div class="container">
                 <div class="content-wrapper">
-                    <!-- Left side - Illustration -->
+                    <!-- Left side - Logo -->
                     <div class="content-visual">
-                        <img src="./images/photo-1.jpg" alt="Öğrenci İllüstrasyonu" class="students-illustration">
+                        <div class="logo-container">
+                            <img src="images/iyc-logo1.png" alt="İlim Yayma Cemiyeti Logo" class="main-logo">
+                        </div>
                     </div>
 
                     <!-- Right side - Text content -->
@@ -339,12 +343,11 @@
                         <div class="footer-menu-column">
                             <a href="index.html" class="footer-link">Ana Sayfa</a>
                             <a href="kurumsal.html#baskan-mesaji" class="footer-link">Başkanın Mesajı</a>
-                            <a href="#" class="footer-link">Değerlerimiz</a>
+                            <a href="egitim.html" class="footer-link">Eğitim Merkezleri</a>
                         </div>
                         <div class="footer-menu-column">
                             <a href="tum-haberler.html" class="footer-link">Haberler</a>
                             <a href="yurtlarimiz.html" class="footer-link">Yurt Listesi</a>
-                            <a href="egitim.html" class="footer-link">Eğitim Merkezleri</a>
                             <a href="#" class="footer-link">Gizlilik Sözleşmesi</a>
                             <a href="iletisim.html" class="footer-link">İletişim</a>
                         </div>
@@ -393,6 +396,7 @@
 
     <script src="js/body-scripts.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/hero-slider.js"></script>
     <!-- Blog JS -->
     <script src="js/blog.js"></script>
     <!-- Projeler JS -->

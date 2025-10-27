@@ -152,8 +152,9 @@ function loadTabContent(tabName) {
 
 // Blog kartı oluştur
 function createBlogCard(item) {
-    const card = document.createElement('div');
+    const card = document.createElement('a');
     card.className = 'blog-card';
+    card.href = item.link;
     card.innerHTML = `
         <div class="blog-card-image-container">
             <img src="${item.image}" alt="${item.title}" class="blog-card-image">
@@ -173,9 +174,9 @@ function createBlogCard(item) {
             <p class="blog-card-subtitle">${item.subtitle}</p>
             <div class="blog-card-footer">
                 <span class="blog-card-type ${item.contentType}">${getTypeLabel(item.contentType)}</span>
-                <a href="${item.link}" class="blog-card-link">
+                <span class="blog-card-link">
                     Devamını Oku <i class="fas fa-arrow-right"></i>
-                </a>
+                </span>
             </div>
         </div>
     `;

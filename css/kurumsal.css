@@ -265,31 +265,7 @@
     margin-bottom: 10px;
 }
 
-/* Dernek Tüzüğü Stilleri */
-.statute-content {
-    text-align: center;
-    padding: 40px 20px;
-}
 
-.statute-download {
-    margin-top: 40px;
-}
-
-.btn-primary {
-    background: #13a89e;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 50px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(19, 168, 158, 0.3);
-}
-
-.btn-primary:hover {
-    background: #0f8a82;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(19, 168, 158, 0.4);
-}
 
 /* Responsive Tasarım */
 @media (max-width: 991.98px) {

@@ -1,0 +1,74 @@
+/* Main Content Logo Styles */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 40px;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    border-radius: 20px;
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.logo-container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(220, 38, 38, 0.05) 0%, transparent 70%);
+    animation: logoGlow 6s ease-in-out infinite;
+}
+
+.main-logo {
+    width: 280px;
+    height: auto;
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.1));
+    transition: all 0.4s ease;
+}
+
+.main-logo:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 12px 24px rgba(220, 38, 38, 0.2));
+}
+
+@keyframes logoGlow {
+    0%, 100% {
+        opacity: 0.3;
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: rotate(180deg) scale(1.1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo-container {
+        padding: 30px 20px;
+        border-radius: 15px;
+    }
+    
+    .main-logo {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-container {
+        padding: 25px 15px;
+        border-radius: 12px;
+    }
+    
+    .main-logo {
+        width: 160px;
+    }
+}

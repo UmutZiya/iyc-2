@@ -48,7 +48,7 @@
     background: #f8f9fa;
 }
 
-.contact-info {
+.contact-content .contact-info-2 {
     background: white;
     padding: 40px 30px;
     border-radius: 15px;
@@ -56,7 +56,7 @@
     height: 100%;
 }
 
-.contact-info h3 {
+.contact-content .contact-info-2 h3 {
     color: #13a89e;
     font-size: 1.8rem;
     font-weight: 600;
@@ -64,7 +64,7 @@
     text-align: center;
 }
 
-.info-item {
+.contact-content .info-item {
     display: flex;
     align-items: flex-start;
     margin-bottom: 25px;
@@ -72,7 +72,7 @@
     border-bottom: 1px solid #eee;
 }
 
-.info-item:last-child {
+.contact-content .info-item:last-child {
     border-bottom: none;
     margin-bottom: 0;
 }
@@ -206,13 +206,13 @@ textarea.form-control {
         padding: 60px 0;
     }
     
-    .contact-info,
+    .contact-content .contact-info-2,
     .contact-form {
         padding: 30px 20px;
         margin-bottom: 30px;
     }
     
-    .info-item {
+    .contact-content .info-item {
         flex-direction: column;
         text-align: center;
         padding: 20px 0;
@@ -232,7 +232,7 @@ textarea.form-control {
         font-size: 2rem;
     }
     
-    .contact-info h3,
+    .contact-info-2 h3,
     .contact-form h3 {
         font-size: 1.5rem;
     }
@@ -255,7 +255,7 @@ textarea.form-control {
     }
 }
 
-.contact-info,
+.contact-content .contact-info-2,
 .contact-form {
     animation: fadeInUp 0.6s ease-out;
 }

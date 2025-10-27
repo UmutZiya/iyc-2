@@ -198,6 +198,10 @@
             transition: color 0.3s ease;
         }
 
+        .donation-type-name img{
+            height: 25px;
+        }
+
         .donation-type:hover .donation-type-label {
             border-color: var(--primary-light);
             transform: translateY(-2px);
@@ -215,7 +219,7 @@
         }
 
         .donation-type input[type="radio"]:checked + .donation-type-label .donation-type-name {
-            color: var(--primary);
+            color: #fa1616;
         }
 
         .form-step {
