@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/egitim.css">
+    <link rel="stylesheet" href="css/galeri.css">
     <!-- Harici CSS ve Fontlar -->
     <script src="js/head-links.js" defer></script>
 </head>
@@ -90,31 +90,66 @@
         </div>
     </header>
 
-    <!-- Eğitim Merkezleri Section -->
-    <div class="container-egitim">
-        <h1 class="egitim-section-title">Eğitim Merkezlerimiz</h1>
+    <!-- Galeri Section -->
+    <section class="galeri-section">
+        <div class="container">
+            <div class="galeri-header">
+                <h1 class="galeri-title">GALERİ</h1>
+                <p class="galeri-subtitle">İlim Yayma Cemiyeti'nin faaliyetlerinden kareler</p>
+            </div>
 
-        <div class="page-wrapper">
-            <!-- Filtre Bölümü -->
-            <aside class="filter-section">
-                <h2>Filtrele</h2>
-
-                <div class="filter-group">
-                    <label for="ilce-filter">İlçe Seçiniz</label>
-                    <select id="ilce-filter">
-                        <!-- İlçe seçenekleri JavaScript ile dinamik olarak eklenecek -->
-                    </select>
+            <div class="galeri-grid">
+                <div class="galeri-item" data-index="0">
+                    <img src="images/galeri-1.jpg" alt="Galeri Görseli 1" class="galeri-img">
                 </div>
-            </aside>
 
-            <!-- Eğitim Merkezleri Grid Bölümü -->
-            <main class="egitim-merkezleri-section">
-                <div class="egitim-merkezleri-grid" id="egitim-merkezleri-grid">
-                    <!-- Eğitim merkezi kartları JavaScript ile buraya eklenecek -->
+                <div class="galeri-item" data-index="1">
+                    <img src="images/galeri-2.jpg" alt="Galeri Görseli 2" class="galeri-img">
                 </div>
-            </main>
+
+                <div class="galeri-item" data-index="2">
+                    <img src="images/galeri-3.jpg" alt="Galeri Görseli 3" class="galeri-img">
+                </div>
+
+                <div class="galeri-item" data-index="3">
+                    <img src="images/galeri-4.jpg" alt="Galeri Görseli 4" class="galeri-img">
+                </div>
+
+                <div class="galeri-item" data-index="4">
+                    <img src="images/galeri-5.jpg" alt="Galeri Görseli 5" class="galeri-img">
+                </div>
+
+                <div class="galeri-item" data-index="5">
+                    <img src="images/galeri-6.jpg" alt="Galeri Görseli 6" class="galeri-img">
+                </div>
+
+                <div class="galeri-item" data-index="6">
+                    <img src="images/galeri-7.jpg" alt="Galeri Görseli 7" class="galeri-img">
+                </div>
+
+                <div class="galeri-item" data-index="7">
+                    <img src="images/galeri-8.jpg" alt="Galeri Görseli 8" class="galeri-img">
+                </div>
+            </div>
+            <div class="instagram-button-container">
+                <a href="https://www.instagram.com/iycbursa" target="_blank" class="instagram-button">
+                    <i class="fab fa-instagram"></i>
+                    Bizi İnstagramdan Takip Edin
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+            <img id="lightbox-img" src="" alt="">
+            <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
         </div>
     </div>
+
 
     <!-- Footer Section -->
     <footer class="footer">
@@ -191,9 +226,9 @@
 
     <script src="js/body-scripts.js"></script>
     <script src="js/header.js"></script>
-    <script src="js/egitim.js"></script>
-
-
+    <script src="js/galeri.js"></script>
+    <!-- Kurumsal Sayfa JS -->
+    <script src="js/kurumsal.js"></script>
 </body>
 
 </html>

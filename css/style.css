@@ -28,7 +28,7 @@
 }
 
 body {
-    
+
     font-weight: 300;
     font-style: normal;
     line-height: 1.6;
@@ -1248,7 +1248,7 @@ html {
     .grid-pg {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
-        
+
     }
 
     .grid-image-pg {
@@ -1279,5 +1279,59 @@ html {
 
     .grid-image-pg {
         height: 200px;
+    }
+}
+
+/* ===========================================
+   POWERED BY SECTION STİLLERİ
+   =========================================== */
+
+.powered-by {
+    background: #13a89e;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.powered-by p {
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.f2f-link {
+    color: #ffffff;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.f2f-link:hover {
+    color: #ffffff;
+}
+
+.f2f-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(90deg, #ffe817, #ff640a);
+    transition: width 0.3s ease;
+}
+
+.f2f-link:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .powered-by {
+        padding: 12px 0;
+    }
+    
+    .powered-by p {
+        font-size: 0.8rem;
     }
 }
