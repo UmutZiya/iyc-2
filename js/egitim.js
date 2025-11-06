@@ -2,26 +2,6 @@
 const egitimMerkezleri = [
     {
         id: 1,
-        image: "/images/buhara-main.jpg",
-        title: "BUHARA OKUMA EVİ",
-        ilce: "İnegöl",
-        telefon: "0 (545) 307-4661",
-        email: "buharaiyem@iyc.org.tr",
-        konum: "Burhaniye Mah. Yeşil Bursa Cad. No:1 İnegöl/Bursa/Türkiye",
-        link: "egitim-merkezi-single-page.html?id=1"
-    },
-    {
-        id: 2,
-        image: "/images/izniki-main.jpg",
-        title: "İZNİK KİTAP-KAHVE",
-        ilce: "İznik",
-        telefon: "0 (544) 492-2606",
-        email: "iznik@iyc.org.tr",
-        konum: "Mustafa Kemal Paşa Mah. Göl Sokak No:19 İznik/Bursa/Türkiye",
-        link: "egitim-merkezi-single-page.html?id=2"
-    },
-    {
-        id: 3,
         image: "/images/nuribey-main.jpg",
         title: "NURİBEY EĞİTİM MERKEZİ",
         ilce: "Osmangazi",
@@ -92,36 +72,7 @@ function capitalizeFirst(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-// Benzersiz ilçeleri al ve select'i güncelle
-function updateIlceFilter() {
-    const uniqueIlceler = [...new Set(egitimMerkezleri.map(merkez => merkez.ilce))];
-    const ilceFilter = document.getElementById('ilce-filter');
 
-    // Mevcut seçili değeri sakla
-    const currentValue = ilceFilter.value;
-
-    // Select'i temizle
-    ilceFilter.innerHTML = '';
-
-    // "Tüm İlçeler" seçeneğini ekle
-    const allOption = document.createElement('option');
-    allOption.value = 'hepsi';
-    allOption.textContent = 'Tüm İlçeler';
-    ilceFilter.appendChild(allOption);
-
-    // Benzersiz ilçeleri alfabetik sıraya koy ve ekle
-    uniqueIlceler.sort().forEach(ilce => {
-        const option = document.createElement('option');
-        option.value = ilce;
-        option.textContent = getIlceName(ilce);
-        ilceFilter.appendChild(option);
-    });
-
-    // Eğer önceki seçili değer hala mevcutsa, onu seç
-    if (currentValue && [...ilceFilter.options].some(opt => opt.value === currentValue)) {
-        ilceFilter.value = currentValue;
-    }
-}
 
 // Yeni eğitim merkezi ekleme fonksiyonu
 function addEgitimMerkezi(merkezData) {
@@ -143,37 +94,16 @@ function addEgitimMerkezi(merkezData) {
 
     egitimMerkezleri.push(newMerkez);
 
-    // İlçe filtresini güncelle
-    updateIlceFilter();
-
     // Merkezleri yeniden render et
-    filterEgitimMerkezleri();
+    renderEgitimMerkezleri();
 
     return newMerkez;
 }
 
-// Filtreleme fonksiyonu
-function filterEgitimMerkezleri() {
-    const selectedIlce = document.getElementById('ilce-filter').value;
-
-    const filteredMerkezler = egitimMerkezleri.filter(merkez => {
-        const ilceMatch = selectedIlce === 'hepsi' || merkez.ilce === selectedIlce;
-        return ilceMatch;
-    });
-
-    renderEgitimMerkezleri(filteredMerkezler);
-}
-
 // Sayfa yüklendiğinde eğitim merkezlerini render et
 document.addEventListener('DOMContentLoaded', () => {
-    // İlçe filtresini güncelle
-    updateIlceFilter();
-
     // Eğitim merkezlerini render et
     renderEgitimMerkezleri();
-
-    // Filtre değişikliklerini dinle
-    document.getElementById('ilce-filter').addEventListener('change', filterEgitimMerkezleri);
 });
 
 // Örnek kullanım: Yeni eğitim merkezi ekleme

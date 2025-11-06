@@ -132,6 +132,7 @@ a {
 
 .footer-contact-title {
     font-size: 20px;
+    text-align: start;
     font-weight: 600;
     margin-bottom: 15px;
     color: var(--footer-text-color);
@@ -145,8 +146,7 @@ a {
 
 .contact-item {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: start;
     gap: 10px;
     font-size: 16px;
     color: var(--footer-text-color);
@@ -419,7 +419,7 @@ pre {
 
     .footer-logo-img {
         width: 70px;
-        height: 70px;
+        height: 110px;
     }
 
     .footer-logo-text h3 {

@@ -11,66 +11,7 @@
     margin-bottom: 2rem;
 }
 
-/* Ana Layout */
-.page-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
 
-@media (min-width: 768px) {
-    .page-wrapper {
-        flex-direction: row;
-    }
-}
-
-/* Filtre Bölümü */
-.filter-section {
-    flex: 0 0 280px;
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.filter-section h2 {
-    margin-bottom: 20px;
-    color: #2c3e50;
-    font-size: 1.4rem;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
-}
-
-.filter-group {
-    margin-bottom: 25px;
-}
-
-.filter-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
-    color: #34495e;
-}
-
-.filter-group select {
-    width: 100%;
-    padding: 10px 12px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    background-color: #f8f9fa;
-    font-size: 1rem;
-    transition: border-color 0.3s;
-}
-
-.filter-group select:focus {
-    outline: none;
-    border-color: #3498db;
-}
-
-/* Eğitim Merkezleri Grid Bölümü */
-.egitim-merkezleri-section {
-    flex: 1;
-}
 
 .egitim-merkezleri-grid {
     display: grid;
@@ -166,13 +107,3 @@
     grid-column: 1 / -1;
 }
 
-/* Responsive Düzenlemeler */
-@media (max-width: 767px) {
-    .filter-section {
-        order: 2;
-    }
-    
-    .egitim-merkezleri-section {
-        order: 1;
-    }
-}

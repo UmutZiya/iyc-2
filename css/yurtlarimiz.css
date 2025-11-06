@@ -173,10 +173,10 @@
         /* Responsive Düzenlemeler */
         @media (max-width: 767px) {
             .filter-section {
-                order: 2;
+                order: 1;
             }
             
             .yurtlar-section {
-                order: 1;
+                order: 2;
             }
         }
