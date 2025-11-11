@@ -597,7 +597,7 @@ html {
 
     .nav-cards-wrapper {
         flex-direction: row;
-        gap: 10px;
+        gap: 10px !important;
         align-items: stretch;
         justify-content: center;
     }
@@ -673,6 +673,13 @@ html {
 @media (max-width: 480px) {
     .content-section {
         padding: 20px 0;
+    }
+
+    .nav-cards-wrapper {
+        flex-direction: row;
+        gap: 10px !important;
+        align-items: stretch;
+        justify-content: center;
     }
 
     .nav-card-text {
