@@ -387,7 +387,7 @@ pre {
     }
     
     .footer-contact {
-        margin-bottom: 20px;
+        margin-bottom: 6rem;
     }
     
     .contact-item {
@@ -430,7 +430,7 @@ pre {
         flex-direction: row;
         gap: 20px;
         align-items: center;
-        margin-left: 4rem;
+        margin-left: 2rem;
         text-align: start;
     }
 
